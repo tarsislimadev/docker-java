@@ -28,4 +28,4 @@ jobs:
         run: sh build.sh
       -
         name: Push
-        run: docker push ${{ secrets.IMAGE_NAME }} -a
+        run: docker push tmvdl/java -a
