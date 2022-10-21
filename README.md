@@ -1,4 +1,4 @@
-# Docker Java
+# Java in Docker
 
 Imagem Docker para compilação de projetos Java
 
@@ -8,7 +8,7 @@ Veja mais em [hub.docker.com/r/tmvdl/java](https://hub.docker.com/r/tmvdl/java)
 
 Instalar o [Docker](https://docs.docker.com/engine/install/).
 
-### Uso 1
+### Em ambiente de desenvolvimento
 
 1. Criar um arquivo `docker-compose.yaml` na raiz do projeto com a imagem [tmvdl/java](https://hub.docker.com/r/tmvdl/java).
 
@@ -29,18 +29,14 @@ services:
 docker-compose up --build
 ```
 
-### Uso 2
+### Em ambiente de produção
 
 1. Executar como container do Docker
 
 ```sh
-docker run --name nodejs tmvdl/java
+docker run tmvdl/java
 ```
 
 ## License
 
-[MIT](LICENSE)
-
-## Update
-
-Atualizado em 27/12/2021
+[MIT](./LICENSE)
