@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+
+  11-gradle:
+    image: 'tmvdl/java:11-gradle'
+    build: './src/11-gradle'
+
+  11-spring-boot:
+    image: 'tmvdl/java:11-spring-boot'
+    build: './src/11-spring-boot'
+
+  8-maven:
+    image: 'tmvdl/java:8-maven'
+    build: './src/8-maven'
+
+  gradle:
+    image: 'tmvdl/java:gradle'
+    build: './src/gradle'
+
+  spring-boot:
+    image: 'tmvdl/java:spring-boot'
+    build: './src/spring-boot'
+
+  11-maven:
+    image: 'tmvdl/java:11-maven'
+    build: './src/11-maven'
+
+  8-gradle:
+    image: 'tmvdl/java:8-gradle'
+    build: './src/8-gradle'
+
+  8-spring-boot:
+    image: 'tmvdl/java:8-spring-boot'
+    build: './src/8-spring-boot'
+
+  maven:
+    image: 'tmvdl/java:maven'
+    build: './src/maven'
