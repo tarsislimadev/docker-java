@@ -2,45 +2,43 @@
 
 [![github/actions/workflow/status](https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-java/docker-push.yml)](https://img.shields.io/github/actions/workflow/status/brtmvdl/docker-java/docker-push.yml) [![github/license](https://img.shields.io/github/license/brtmvdl/docker-java)](https://img.shields.io/github/license/brtmvdl/docker-java) [![github/stars](https://img.shields.io/github/stars/brtmvdl/docker-java?style=social)](https://img.shields.io/github/stars/brtmvdl/antify?style=social)
 
-Para compilação e entrega de projetos escritos em Java
+To compile Docker images in projects written in Java.
 
-Veja mais em [hub.docker.com/r/tmvdl/java](https://hub.docker.com/r/tmvdl/java)
+See more in [hub.docker.com/r/tmvdl/java](https://hub.docker.com/r/tmvdl/java)
 
-## Como usar
+## How to
 
-Instalar o [Docker](https://docs.docker.com/engine/install/).
+Install [Docker](https://docs.docker.com/engine/install/).
 
-### Em ambiente de desenvolvimento (opção 1)
-
-Criar um arquivo `docker-compose.yaml` na raiz do projeto com a imagem [tmvdl/java](https://hub.docker.com/r/tmvdl/java):
+### Development (option 1)
 
 ```yaml
+# docker-compose.yaml
 version: '3'
 
 services:
-  app:
+
+app:
     image: tmvdl/java
     volumes:
       - .:/app
 ```
 
-Subir o container para a construção do build:
-
 ```bash
 docker-compose up --build
 ```
 
-### Em ambiente de desenvolvimento (opção 2)
+### Development (option 2)
 
-Executar os seguintes comando:
+Run:
 
 ```bash
 bash env/run.sh maven
 ```
 
-### Em ambiente de produção
+### Production
 
-Executar com container do Docker:
+Run:
 
 ```sh
 docker run tmvdl/java
