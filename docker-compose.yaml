@@ -37,3 +37,51 @@ services:
   maven:
     image: 'tmvdl/java:maven'
     build: './src/maven'
+
+  14-maven-alpine:
+    image: 'tmvdl/java:14-maven-alpine'
+    build: './src/14-maven-alpine'
+
+  # 14-gradle:
+  #   image: 'tmvdl/java:14-gradle'
+  #   build: './src/14-gradle'
+
+  # 14-spring-boot:
+  #   image: 'tmvdl/java:14-spring-boot'
+  #   build: './src/14-spring-boot'
+
+  # 14-maven:
+  #   image: 'tmvdl/java:14-maven'
+  #   build: './src/14-maven'
+
+  # 8-gradle-alpine:
+  #   image: 'tmvdl/java:8-gradle-alpine'
+  #   build: './src/8-gradle-alpine'
+
+  # 8-spring--alpineboot:
+  #   image: 'tmvdl/java:8-spring-boot-alpine'
+  #   build: './src/8-spring-boot-alpine'
+
+  # 8-maven-alpine:
+  #   image: 'tmvdl/java:8-maven-alpine'
+  #   build: './src/8-maven-alpine'
+
+  # 11-gradle-alpine:
+  #   image: 'tmvdl/java:11-gradle-alpine'
+  #   build: './src/11-gradle-alpine'
+
+  # 11-spring-alpine-boot:
+  #   image: 'tmvdl/java:11-spring-boot-alpine'
+  #   build: './src/11-spring-boot-alpine'
+
+  # 11-maven-alpine:
+  #   image: 'tmvdl/java:11-maven-alpine'
+  #   build: './src/11-maven-alpine'
+
+  # 14-gradle-alpine:
+  #   image: 'tmvdl/java:14-gradle-alpine'
+  #   build: './src/14-gradle-alpine'
+
+  # 14-spring-alpine-boot:
+  #   image: 'tmvdl/java:14-spring-boot-alpine'
+  #   build: './src/14-spring-boot-alpine'
