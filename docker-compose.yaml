@@ -18,6 +18,10 @@ services:
     image: 'tmvdl/java:gradle'
     build: './src/gradle'
 
+  spring:
+    image: 'tmvdl/java:spring'
+    build: './src/spring'
+
   spring-boot:
     image: 'tmvdl/java:spring-boot'
     build: './src/spring-boot'
